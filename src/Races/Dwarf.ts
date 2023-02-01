@@ -9,7 +9,6 @@ class Dwarf extends Race {
   ) {
     super(name, dexterity);
     Dwarf.instances += 1;
-    this._maxLifePoints = 80;
   }
 
   get maxLifePoints(): number { return this._maxLifePoints; }
