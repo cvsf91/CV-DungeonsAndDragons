@@ -13,19 +13,12 @@ class Character implements Fighter {
   private _strength: number;
   private _defense: number;
   private _energy: Energy;
-  //   private _dexterity: number;
-  //   private _race: Race;
   constructor(
     private name: string,
     private _dexterity = value,
     private _race: Race = new Elf('Edward', value),
     archetype: Archetype = new Mage('Edward'),
   ) {
-    // const rndInt = getRandomInt(1, 10);
-    // this._dexterity = rndInt;
-    // this._race = race || new Elf('Edward', rndInt);
-    // this._dexterity = dexterity !== undefined ? dexterity : rndInt;
-    // this._race = race !== undefined ? race : new Elf('Edward', rndInt);
     this._archetype = archetype;
     this.maxLifePoints = this.race.maxLifePoints / 2;
     this._lifePoints = this.maxLifePoints;
